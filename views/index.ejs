@@ -13,7 +13,13 @@
         <br>
         <button id="button" type="submit" class="btn btn-light" value="Save changes">Save changes</button>
     </form>
-   </div>
+    <% } else { %>
+        <div class="alert alert-danger" role="alert">
+            <%= error %>
+        </div>
+    <a class="btn btn secondary text-white"
+    href="/" role="button">Try again</a>
+    <% } %>
 </div>
 </div>
 <%- include('footer'); %>
